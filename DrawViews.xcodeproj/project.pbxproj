@@ -12,6 +12,12 @@
 		D80E4A1E22635F3E0003D4E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80E4A1C22635F3E0003D4E4 /* Main.storyboard */; };
 		D80E4A2022635F400003D4E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D80E4A1F22635F400003D4E4 /* Assets.xcassets */; };
 		D80E4A2322635F400003D4E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D80E4A2122635F400003D4E4 /* LaunchScreen.storyboard */; };
+		D80E4A2B226360150003D4E4 /* SubView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A2A226360150003D4E4 /* SubView1.swift */; };
+		D80E4A2D226360290003D4E4 /* SubView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A2C226360290003D4E4 /* SubView2.swift */; };
+		D80E4A2F2263603B0003D4E4 /* SubView3.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A2E2263603B0003D4E4 /* SubView3.swift */; };
+		D80E4A312263604C0003D4E4 /* SubView4.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A302263604C0003D4E4 /* SubView4.swift */; };
+		D80E4A332263605E0003D4E4 /* SubView5.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A322263605E0003D4E4 /* SubView5.swift */; };
+		D80E4A35226360700003D4E4 /* SubView6.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A34226360700003D4E4 /* SubView6.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		D80E4A1F22635F400003D4E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D80E4A2222635F400003D4E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D80E4A2422635F400003D4E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D80E4A2A226360150003D4E4 /* SubView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView1.swift; sourceTree = "<group>"; };
+		D80E4A2C226360290003D4E4 /* SubView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView2.swift; sourceTree = "<group>"; };
+		D80E4A2E2263603B0003D4E4 /* SubView3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView3.swift; sourceTree = "<group>"; };
+		D80E4A302263604C0003D4E4 /* SubView4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView4.swift; sourceTree = "<group>"; };
+		D80E4A322263605E0003D4E4 /* SubView5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView5.swift; sourceTree = "<group>"; };
+		D80E4A34226360700003D4E4 /* SubView6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView6.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,22 @@
 				D80E4A1F22635F400003D4E4 /* Assets.xcassets */,
 				D80E4A2122635F400003D4E4 /* LaunchScreen.storyboard */,
 				D80E4A2422635F400003D4E4 /* Info.plist */,
+				D80E4A362263A1940003D4E4 /* ViewsClases */,
 			);
 			path = DrawViews;
+			sourceTree = "<group>";
+		};
+		D80E4A362263A1940003D4E4 /* ViewsClases */ = {
+			isa = PBXGroup;
+			children = (
+				D80E4A302263604C0003D4E4 /* SubView4.swift */,
+				D80E4A2E2263603B0003D4E4 /* SubView3.swift */,
+				D80E4A2C226360290003D4E4 /* SubView2.swift */,
+				D80E4A2A226360150003D4E4 /* SubView1.swift */,
+				D80E4A34226360700003D4E4 /* SubView6.swift */,
+				D80E4A322263605E0003D4E4 /* SubView5.swift */,
+			);
+			path = ViewsClases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D80E4A2D226360290003D4E4 /* SubView2.swift in Sources */,
 				D80E4A1B22635F3D0003D4E4 /* ViewController.swift in Sources */,
+				D80E4A312263604C0003D4E4 /* SubView4.swift in Sources */,
+				D80E4A332263605E0003D4E4 /* SubView5.swift in Sources */,
+				D80E4A35226360700003D4E4 /* SubView6.swift in Sources */,
 				D80E4A1922635F3D0003D4E4 /* AppDelegate.swift in Sources */,
+				D80E4A2F2263603B0003D4E4 /* SubView3.swift in Sources */,
+				D80E4A2B226360150003D4E4 /* SubView1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
