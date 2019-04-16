@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var animator: UIDynamicAnimator!
+    var gravity: UIGravityBehavior!
+    var push: [UIPushBehavior]=[]
+    var delegate: UIDynamicAnimatorDelegate!
+    
     var flagIsFlip:Bool=true
     
     let imageView = UIImageView(image: UIImage(named: "cardBack"))
@@ -17,8 +23,27 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         for i in 0...viewCollection.count-1{
             self.view.addSubview(viewCollection[i])
+            let pb = UIPushBehavior(items: [viewCollection[i]], mode: .instantaneous)
+            pb.angle = (2*CGFloat.pi).arc4random
+            pb.magnitude = CGFloat(1.0)+CGFloat(2.0).arc4random
+            push.append(pb)
+            
+        }
+        ////
+        let collisionBehavior = UICollisionBehavior(items: self.view.subviews)
+        collisionBehavior.translatesReferenceBoundsIntoBoundary = true
+        
+        animator = UIDynamicAnimator (referenceView: view)
+        gravity = UIGravityBehavior (items: self.view.subviews)
+        gravity.gravityDirection = CGVector(dx: 0, dy: 0)
+        animator.addBehavior (gravity)
+        animator.addBehavior(collisionBehavior)
+        
+        for i in 0...push.count-1 {
+            animator.addBehavior(push[i])
         }
         viewsClick()
     }
@@ -32,8 +57,11 @@ class ViewController: UIViewController {
         for view in viewCollection {
             view.isHidden = true
         }
-        tap.view!.frame = CGRect(x:60, y: 90, width: 294, height: 586)
+       
         tap.view!.isHidden = false
+       // animator.delegate = self
+       // func dynamicAnimatorDidPause(animator: UIDynamicAnimator)
+          tap.view!.frame = CGRect(x:60, y: 90, width: 294, height: 586)
         
         if flagIsFlip != true   {
             if imageView.superview != tap.view {
@@ -46,6 +74,19 @@ class ViewController: UIViewController {
             flagIsFlip = false
         }
     }
-    
+   
 }
 
+extension CGFloat {
+    var arc4random: CGFloat {
+        return self * (CGFloat(arc4random_uniform(UInt32.max))/CGFloat(UInt32.max))
+    }
+}
+extension ViewController: UIDynamicAnimatorDelegate
+{
+    func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator)
+    {
+
+    
+    }
+}
