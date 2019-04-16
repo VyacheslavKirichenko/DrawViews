@@ -34,12 +34,12 @@ class ViewController: UIViewController {
           let choiceView = tap.view
                 choiceView?.frame = CGRect(x:60, y: 90, width: 294, height: 586)
                 choiceView?.isHidden = false
+        
+        let imageView = UIImageView(image: UIImage(named: "cardBack"))
         if flag != false   {
-            
-            let imageView = UIImageView(image: UIImage(named: "images.jpg")) /// dosnt work
-            imageView.frame = choiceView!.frame
             choiceView?.addSubview(imageView)
         }else{
+            choiceView?.subviews.last?.isHidden = true
             flag = true
         }
     }
