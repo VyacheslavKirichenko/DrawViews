@@ -29,7 +29,7 @@ class SubView6: UIView {
         let attributs: [NSAttributedString.Key : Any] = [
             NSAttributedString.Key.font: font,
             NSAttributedString.Key.foregroundColor: UIColor.red
-        ]
+    ]
         tex.draw(in: textRect, withAttributes: attributs)
     }
     func createRectangle() {
