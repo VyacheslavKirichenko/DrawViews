@@ -46,24 +46,19 @@ class ViewController: UIViewController {
         
     }
   
-    private var matchedCardViews: Set<UIView> = []
-    private var lastChoosenCardview: UIView?
+   
     
     @IBAction func flipCard(_ sender: UITapGestureRecognizer) {
        
-        if let chosenCardView = sender.view  {
-          
-//            for i in self.viewCollection {
-//                i.isHidden = true                 ----->1
-//            }
+
+
             sender.view?.isHidden = false
           
-            cardBehavior.removeItem(chosenCardView)
-            lastChoosenCardview=chosenCardView
+            cardBehavior.removeItem(sender.view!)
             
             if flagIsFlip != true   {
-                chosenCardView.frame = CGRect(x:60, y: 90, width: 98, height: 150)
-                chosenCardView.cardsMatchAnimation(completion: nil)
+              
+                sender.view!.cardsMatchAnimation(completion: nil)
                 if imageView.superview != sender.view {
                     sender.view!.addSubview(imageView)
                 }
@@ -71,14 +66,13 @@ class ViewController: UIViewController {
                 flagIsFlip=true
                 
             }else{
-//                for i in self.viewCollection {
-//                    i.isHidden = false                ----->1
-//                }
+
+             
                 imageView.isHidden = true
                 flagIsFlip = false
                 cardBehavior.addItem(sender.view!)
             }
-        }
+
         
     }
    
