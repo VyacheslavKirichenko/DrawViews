@@ -14,7 +14,7 @@ extension UIView {
             duration: Constants.matchCardAnimationDuration,
             curve: .linear ,
             animations: {
-                self.center = self.superview!.center
+                self.center = CGPoint(x: self.superview!.frame.maxX/6, y: self.superview!.frame.maxY/6)
                 self.transform = CGAffineTransform.identity.scaledBy(x: Constants.matchCardAnimationScaleUp,
                                                                      y: Constants.matchCardAnimationScaleUp)
         })

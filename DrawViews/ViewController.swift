@@ -12,7 +12,7 @@ struct Constants {
     static var flipCardAnimationDuration: TimeInterval = 0.9
     static var matchCardAnimationDuration: TimeInterval = 0.9
     static var matchCardAnimationScaleUp: CGFloat = 1.5
-    static var matchCardAnimationScaleDown: CGFloat = 0.8
+    static var matchCardAnimationScaleDown: CGFloat = 1
     static var behaviorResistance: CGFloat = 0
     static var behaviorElasticity: CGFloat = 1.0
     static var behaviorPushMagnitudeMinimum: CGFloat = 0.5
@@ -50,7 +50,9 @@ class ViewController: UIViewController {
     
     @IBAction func flipCard(_ sender: UITapGestureRecognizer) {
        
-
+        for i in view!.subviews {
+            i.isHidden = true
+        }
 
             sender.view?.isHidden = false
           
@@ -71,6 +73,9 @@ class ViewController: UIViewController {
                 imageView.isHidden = true
                 flagIsFlip = false
                 cardBehavior.addItem(sender.view!)
+                for i in view!.subviews {
+                    i.isHidden = false
+                }
             }
 
         
