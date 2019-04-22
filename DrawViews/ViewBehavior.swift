@@ -10,7 +10,7 @@ import UIKit
 
 
 
-class CardBehavior: UIDynamicBehavior {
+class ViewBehavior: UIDynamicBehavior {
     
     lazy var collisionBehavior: UICollisionBehavior = {
         let behavior = UICollisionBehavior()

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D80C019522687B9A00C2B3DC /* CardBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C019422687B9A00C2B3DC /* CardBehavior.swift */; };
+		D80C019522687B9A00C2B3DC /* ViewBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C019422687B9A00C2B3DC /* ViewBehavior.swift */; };
 		D80C019722688C6100C2B3DC /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80C019622688C6100C2B3DC /* UIView.swift */; };
 		D80E4A1922635F3D0003D4E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A1822635F3D0003D4E4 /* AppDelegate.swift */; };
 		D80E4A1B22635F3D0003D4E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80E4A1A22635F3D0003D4E4 /* ViewController.swift */; };
@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D80C019422687B9A00C2B3DC /* CardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardBehavior.swift; sourceTree = "<group>"; };
+		D80C019422687B9A00C2B3DC /* ViewBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBehavior.swift; sourceTree = "<group>"; };
 		D80C019622688C6100C2B3DC /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		D80E4A1522635F3D0003D4E4 /* DrawViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D80E4A1822635F3D0003D4E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 				D80E4A1822635F3D0003D4E4 /* AppDelegate.swift */,
 				D80E4A1A22635F3D0003D4E4 /* ViewController.swift */,
 				D80C019622688C6100C2B3DC /* UIView.swift */,
-				D80C019422687B9A00C2B3DC /* CardBehavior.swift */,
+				D80C019422687B9A00C2B3DC /* ViewBehavior.swift */,
 				D80E4A1C22635F3E0003D4E4 /* Main.storyboard */,
 				D80E4A1F22635F400003D4E4 /* Assets.xcassets */,
 				D80E4A2122635F400003D4E4 /* LaunchScreen.storyboard */,
@@ -170,7 +170,7 @@
 				D80C019722688C6100C2B3DC /* UIView.swift in Sources */,
 				D80E4A2D226360290003D4E4 /* SubView2.swift in Sources */,
 				D80E4A1B22635F3D0003D4E4 /* ViewController.swift in Sources */,
-				D80C019522687B9A00C2B3DC /* CardBehavior.swift in Sources */,
+				D80C019522687B9A00C2B3DC /* ViewBehavior.swift in Sources */,
 				D80E4A312263604C0003D4E4 /* SubView4.swift in Sources */,
 				D80E4A332263605E0003D4E4 /* SubView5.swift in Sources */,
 				D80E4A35226360700003D4E4 /* SubView6.swift in Sources */,
